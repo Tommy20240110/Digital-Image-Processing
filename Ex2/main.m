@@ -13,7 +13,7 @@ title('原图');
 I1 = imnoise(I, 'gaussian', 0, 0.01);
 figure;
 imshow(I1);
-title('gaussian噪声图');
+title('高斯噪声图');
 
 % (B) 利用函数 imnoise 给图像 'lena.tif' 添加椒盐 (salt & pepper) 噪声
 I2 = imnoise(I, 'salt & pepper');

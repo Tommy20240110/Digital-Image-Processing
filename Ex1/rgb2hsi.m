@@ -5,11 +5,11 @@ function hsi = rgb2hsi(rgb)
 %   accounts for three image planes: red, green, and blue, in that
 %   order. If all RGB component images are equal, the HSI conversion
 %   is undefined. The input image can be of class double (with values
-%   in the range [0, 1]), uint8, or uint16. 
+%   in the range [0, 1]), uint8, or uint16.
 %
 %   The output image, HSI, is of class double, where:
 %     hsi(:, :, 1) = hue image normalized to the range [0, 1] by
-%                    dividing all angle values by 2*pi. 
+%                    dividing all angle values by 2*pi.
 %     hsi(:, :, 2) = saturation image, in the range [0, 1].
 %     hsi(:, :, 3) = intensity image, in the range [0, 1].
 

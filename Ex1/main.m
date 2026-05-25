@@ -25,17 +25,16 @@ imshow(RGB(:,:,3));  % 显示第 3 个颜色分量
 
 %% 3. 图像的基本运算
 % (A) 图像的缩放
-A = imread('Ex1/lena.tif');
-B = imresize(A, 0.5);
+I = imread('Ex1/lena.tif');
+J = imresize(I, 0.5);
 figure;
-imshow(A);
+imshow(I);
 title('原图');
 figure;
-imshow(B);
+imshow(J);
 title('比例缩小图');
 
 % (B) 图像的旋转
-I = imread('Ex1/lena.tif');
 J = imrotate(I, 90);    % 图像逆时针旋转 90 度
 K = imrotate(I, 180);
 figure;
@@ -71,8 +70,8 @@ title('B 分量');
 
 % (B) 常用彩色空间转换
 RGB = imread('Ex1/peppers.bmp');
-HSI = rgb2hsi(RGB);    % RGB 空间转换为 HSI 空间
-YCBCR = rgb2ycbcr(RGB);      % RGB 空间转换为 YCbCr 空间
+HSI = rgb2hsi(RGB);     % RGB 空间转换为 HSI 空间
+YCBCR = rgb2ycbcr(RGB); % RGB 空间转换为 YCbCr 空间
 figure;
 subplot(1,3,1);
 imshow(HSI(:,:,1));
